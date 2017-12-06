@@ -7,6 +7,7 @@ body {
     width: 100px;
     position: relative;
     height: 50px;
+    z-index: -2;
 }
 
 .cara {
@@ -89,6 +90,14 @@ body {
     transform-origin: 0% 0%;
 }
 
+.car {
+    animation: move-truck 2s infinite;
+}
+
+.camion {
+    animation: move-truck-camion 2s infinite;
+}
+
 @-webkit-keyframes put-put {
     0% {
         transform: rotate(50deg);
@@ -99,4 +108,89 @@ body {
     100% {
         transform: rotate(50deg);
     }
+}
+
+@-webkit-keyframes move-truck {
+    0% {
+        margin-left: 50%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        margin-left: 45%;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 40%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes move-truck-camion {
+    0% {
+        margin-left: 90%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        margin-left: 45%;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 10%;
+        opacity: 0;
+    }
+}
+
+.camion {
+    /*display: flex;*/
+}
+
+.caraCamion {
+    width: 25px;
+    height: 35px;
+    border-top-left-radius: 10px;
+    background-color: #444444;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Loadercamion {
+    width: 100px;
+    height: 50px;
+    background-color: #444444;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+
+.ruedasDelantecamion {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 2px solid #fff;
+    top: 36px;
+    left: 0px;
+    background-color: #444;
+    border-radius: 50%;
+}
+
+.ruedasTraseracamion {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 2px solid #fff;
+    top: 36px;
+    right: 10px;
+    background-color: #444;
+    border-radius: 50%;
 }
