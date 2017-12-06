@@ -71,15 +71,18 @@ body {
 
 
 .div{
-    width:28px;
+
     position:relative;}
 
 .div:after{
     content:"";
-    left:50px;
+    width:100px;
+    height:100px;
+    left:10px;
+    top:-20px;
     position:absolute;
-    border-top:3px solid #444;
-    width:40px;
-    transform: rotate(45deg);
+    border-top:7px solid #444;
+
+    transform: rotate(30deg);
     transform-origin: 0% 0%;
 }
