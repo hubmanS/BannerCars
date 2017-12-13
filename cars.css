@@ -196,13 +196,19 @@ body {
     background-color: #444;
     border-radius: 50%;
 }
-.cajitas > div{
+.cajas {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 1px;
+}
 
-    width: 35px;
-    height: 35px;
-    background-color: brown;
+.cajitas {
+    display: flex;
 
-    border: 3px solid sienna;
+    /* Por si quieres cambiar las alineación */
+
+    /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
 }
 
 .diagonal{
@@ -215,6 +221,3 @@ body {
     transform-origin: 0% 0%;
 }
 
-.cajitas{
-    display: flex;
-}
